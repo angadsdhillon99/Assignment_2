@@ -38,3 +38,19 @@ list-style-type: none;
 align-items: start;
 align-self: left;
 }
+.one_column{
+  display:flex;
+  justify-content: center;
+  align-Items: center;
+  margin: auto;
+}
+.eleven_columns{
+  display:flex;
+  justify-content: center;
+  align-Items: center;
+  margin: auto;
+}
+.h4{
+  font-family:'Oswald';
+  font-weight:400;
+}
