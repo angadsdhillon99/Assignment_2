@@ -26,10 +26,13 @@ fetch("/api", {
           const html = matchArray.map(place => {      
                 return `      
                   <li>          
-                    <span class="name">${place.name}</span>       
-                 <span class="category">${place.category}</span>      
-                  <span class="city">${place.city}</span>       
-                   </li>      
+                    <h4><span class="name">${place.name}</span> </h4>
+                    <p>     
+                 <span class="category">${place.category}</span>  </p>    
+                 <address><p>
+                 ${place.address_line_1}<br>
+                 ${place.city},${place.state} ${place.zip}
+                 </p></address> </li>      
                      `;   
              }).join('');   
               suggestions.innerHTML = html;}
